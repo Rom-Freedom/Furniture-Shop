@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 50px auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  margin-bottom: 100px;
+}
+header .logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+header .presentation {
+  margin: 50px 0;
+  background: url('./img/modern-white-apartment.jpg') no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-color: #bcbcbc;
+  position: relative;
+}
+header .presentation::after {
+  position: absolute;
+  content: 'The best furniture for your house';
+  top: 100px;
+  left: 50px;
+  width: 300px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+header .presentation::before {
+  position: absolute;
+  content: 'With low price';
+  top: 250px;
+  left: 50px;
+  width: 300px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+}
