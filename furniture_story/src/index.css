@@ -57,9 +57,10 @@ header .shop-cart-button {
   float: right;
   cursor: pointer;
   transition: color .5s ease;
+  margin-right: 30px;
 }
 header .shop-cart-button:hover,
-header .shop-cart-button:active {
+header .shop-cart-button.active {
   color: #dc3d3d;
 }
 
