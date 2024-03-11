@@ -7,14 +7,14 @@ export class Categories extends Component {
         categories: [
             {
                 key: 'all',
-                name: 'Everything'
+                name: 'All'
             },
             {
-                key: 'chair',
+                key: 'chairs',
                 name: 'Chairs'
             },
             {
-                key: 'table',
+                key: 'tables',
                 name: 'Tables'
             },
             {
@@ -22,15 +22,15 @@ export class Categories extends Component {
                 name: 'Sofa'
             },
             {
-                key: 'kitchen',
+                key: 'kitchens',
                 name: 'Kitchens'
             },
             {
-                key: 'lamp',
+                key: 'lamps',
                 name: 'Lamps'
             },
             {
-                key: 'shelf',
+                key: 'shelfs',
                 name: 'Shelfs'
             },
         ]
@@ -40,7 +40,7 @@ export class Categories extends Component {
     return (
       <div className='categories'>
         {this.state.categories.map(el => (
-            <div key={el.key}>{el.name}</div>
+            <div key={el.key} onClick={() => this.props.chooseCategory(el.key)} >{el.name}</div>
         ))}
       </div>
     )
