@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 
 * {
   margin: 0;
@@ -40,11 +40,11 @@ header .logo {
 header ul.nav {
   float: right;
 }
-header ul.nav li{
+header ul.nav li {
   display: inline-block;
   margin-right: 20px;
   cursor: pointer;
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
 }
 header ul.nav li:hover {
   opacity: 0.5;
@@ -57,7 +57,7 @@ header ul.nav li:last-child {
 header .shop-cart-button {
   float: right;
   cursor: pointer;
-  transition: color, transform .5s ease;
+  transition: color, transform 0.5s ease;
   margin-right: 30px;
 }
 header .shop-cart-button:hover,
@@ -72,9 +72,9 @@ header .shop-cart {
   right: 0;
   width: 450px;
   background: #fafafa;
-  -webkit-box-shadow: 4px 5px 15px -7px rgba(0,0,0,0.75);
-  -moz-box-shadow: 4px 5px 15px -7px rgba(0,0,0,0.75);
-  box-shadow: 4px 5px 15px -7px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 4px 5px 15px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 5px 15px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 5px 15px -7px rgba(0, 0, 0, 0.75);
   z-index: 100;
   padding: 20px;
   padding-bottom: 0;
@@ -111,7 +111,7 @@ header .shop-cart .item .delete-icon {
   float: right;
   top: -25px;
   cursor: pointer;
-  transition: color, transform .5s ease;
+  transition: color, transform 0.5s ease;
 }
 header .shop-cart .item .delete-icon:hover {
   color: #e33434;
@@ -129,7 +129,7 @@ header .shop-cart .sum {
 
 header .presentation {
   margin: 50px 0;
-  background: url('./img/modern-white-apartment.jpg') no-repeat;
+  background: url("./img/modern-white-apartment.jpg") no-repeat;
   width: 100%;
   height: 500px;
   background-size: cover;
@@ -140,7 +140,7 @@ header .presentation {
 }
 header .presentation::after {
   position: absolute;
-  content: 'The best furniture for your house';
+  content: "The best furniture for your house";
   top: 100px;
   left: 50px;
   width: 300px;
@@ -150,7 +150,7 @@ header .presentation::after {
 }
 header .presentation::before {
   position: absolute;
-  content: 'With low price';
+  content: "With low price";
   top: 250px;
   left: 50px;
   width: 300px;
@@ -169,11 +169,31 @@ header .presentation::before {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 50px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 .categories div:hover {
   border-color: silver;
   transform: scale(1.1);
+}
+
+/* GOOD INFO */
+.full-item {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0, 0.8);
+  z-index: 3000;
+  overflow: auto;
+}
+.full-item > div {
+  width: 300px;
+  position: relative;
+  margin: 10% auto;
+  padding: 30px 40px;
+  background: #fff;
+  border-radius: 9px;
 }
 
 /* MAIN */
@@ -191,26 +211,33 @@ main .item {
   position: relative;
   padding-bottom: 20px;
 }
-main .item img {
+main .item img,
+.full-item img {
   width: 260px;
   height: 260px;
   border-radius: 10px 10px 0 0;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
   cursor: pointer;
 }
-main .item img:hover {
+main .item img:hover,
+.full-item img:hover {
   transform: scale(1.05);
 }
 main h2,
+.full-item h2,
 main p,
-main b {
+.full-item p,
+main b,
+.full-item b {
   margin: 10px 20px;
   color: #333;
 }
-main b {
+main b,
+.full-item b {
   color: #5fa36a;
 }
-main .add-to-cart {
+main .add-to-cart,
+.full-item .add-to-cart {
   position: absolute;
   right: 20px;
   bottom: 20px;
@@ -223,9 +250,10 @@ main .add-to-cart {
   border-radius: 50%;
   cursor: pointer;
   font-weight: 500;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
-main .add-to-cart:hover {
+main .add-to-cart:hover,
+.full-item .add-to-cart:hover {
   transform: scale(1.1) translateY(-2px);
 }
 
