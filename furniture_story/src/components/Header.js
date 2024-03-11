@@ -14,6 +14,12 @@ export default function Header() {
                 <li>Room</li>
             </ul>
             <FaCartShopping onClick={() => setCartOpen(cartOpen = !cartOpen)} className={`shop-cart-button ${cartOpen && 'active'}`} />
+
+            {cartOpen && (
+              <div className='shop-cart'>
+                
+              </div>
+            )}
         </div>
         <div className="presentation"></div>
     </header>

@@ -28,6 +28,7 @@ img {
 
 /* HEADER */
 header {
+  position: relative;
   margin-bottom: 100px;
 }
 header .logo {
@@ -56,12 +57,26 @@ header ul.nav li:last-child {
 header .shop-cart-button {
   float: right;
   cursor: pointer;
-  transition: color .5s ease;
+  transition: color, transform .5s ease;
   margin-right: 30px;
 }
 header .shop-cart-button:hover,
 header .shop-cart-button.active {
   color: #dc3d3d;
+  transform: scale(1.2);
+}
+
+header .shop-cart {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 450px;
+  min-height: 100px;
+  background: #fafafa;
+  -webkit-box-shadow: 4px 5px 15px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 5px 15px -7px rgba(0,0,0,0.75);
+  box-shadow: 4px 5px 15px -7px rgba(0,0,0,0.75);
+  z-index: 100;
 }
 
 header .presentation {
