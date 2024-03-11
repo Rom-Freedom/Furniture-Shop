@@ -118,6 +118,15 @@ header .shop-cart .item .delete-icon:hover {
   transform: scale(1.2);
 }
 
+/* COMMON AMOUNT */
+header .shop-cart .sum {
+  float: left;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 header .presentation {
   margin: 50px 0;
   background: url('./img/modern-white-apartment.jpg') no-repeat;
