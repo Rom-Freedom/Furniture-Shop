@@ -104,6 +104,20 @@ header .shop-cart .item p {
   font-weight: 700;
 }
 
+/* DELETE ICON */
+header .shop-cart .item .delete-icon {
+  position: relative;
+  color: #ca5252;
+  float: right;
+  top: -25px;
+  cursor: pointer;
+  transition: color, transform .5s ease;
+}
+header .shop-cart .item .delete-icon:hover {
+  color: #e33434;
+  transform: scale(1.2);
+}
+
 header .presentation {
   margin: 50px 0;
   background: url('./img/modern-white-apartment.jpg') no-repeat;
